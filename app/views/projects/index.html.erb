@@ -1,4 +1,24 @@
 <%= render "layouts/header" %>
-<div class="container-fluid" id="overall-div">
-  <
+<div class="container-fluid mt-5" id="overall-div">
+  <h1 class="text-center mb-5">Projects</h1>
+  <div class="row w-75 mx-auto">
+    <% @projects.each do |project| %>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <%= image_tag(project.photo, class: "card-img-top", alt: "photo here") %>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card text-center">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
