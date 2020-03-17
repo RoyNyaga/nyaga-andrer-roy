@@ -1,3 +1,18 @@
+/*####### navbar #######*/
+
+#navbar-wrapper {
+	background: #211c1e7a;
+
+}
+
+.nav-link{
+	color: #ca425a;
+	font-size: 1.5em;
+}
+
+
+/*###### Header ##########*/
+
 .carousel-item{
 	height: 100vh;
 	min-height: 300px;
@@ -28,10 +43,102 @@
 	background: #262626;
 	padding: 10px 30px;
 	display: inline-block;
-	color: #fff;
+	color: #e43f5c;
 	margin-top: 15px;
+	border: 2px solid #e43f5c;
+}
+
+.carousel-caption a:hover{
+	background: #c7baba;
+	text-decoration: none
 }
 
 .w-100{
 	height: 100vh;
+}
+
+
+
+/*######### Home page #########*/
+
+#project-right-div {
+	border-bottom: 2px solid #a03749;
+	color: #561a25;
+}
+
+#project-left-div {
+	border-bottom: 2px solid #a03749;
+}
+
+#project-description-card{
+	border: 2px solid #e43f5c;
+}
+
+.project-links {
+	background: #262626;
+	padding: 5px;
+	color: #e43f5c;
+	border: 2px solid #e43f5c;
+}
+
+.project-links:hover{
+	background: #c7baba;
+	text-decoration: none;
+	color: #e43f5c;
+}
+
+.technology-span{
+	padding: 5px;
+	border: 2px solid #e43f5c;
+	border-radius: 30px;
+	color: #e43f5c; 
+}
+
+#technology-div{
+	border-top: 2px solid #e43f5c;
+	padding-top: 10px;
+}
+
+#project-title{
+	font-weight: 700;
+	color: black
+}
+
+.twitter {
+	color: white;
+	background: #3a8de6;
+	padding: 10px;
+	font-size: 5em;
+	border: 2px solid white;
+	border-radius: 50px;
+}
+
+.linkedin{
+	padding: 10px;
+	border: 2px solid white;
+	font-size: 5em;
+	border-radius: 50px;
+	background: #ffc107;
+}
+
+.facebook{
+	color: white;
+	background: #3a8de6;
+	padding: 10px;
+	font-size: 5em;
+
+}
+
+.phone{
+	color: #e43f5c;
+	background: black;
+	padding: 10px;
+	font-size: 2em;
+}
+
+.email{
+	color: #e43f5c;
+	background: black;
+	padding: 10px;
+	font-size: 1.2em;
 }

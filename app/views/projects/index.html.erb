@@ -1,24 +1,46 @@
 <%= render "layouts/header" %>
 <div class="container-fluid mt-5" id="overall-div">
-  <h1 class="text-center mb-5">Projects</h1>
+  <h1 class="text-center mb-5" id="projects" style="font-weight: bolder; color: black">Projects</h1>
   <div class="row w-75 mx-auto">
     <% @projects.each do |project| %>
-      <div class="col-md-4">
+      <div class="col-md-4 py-5 project-col-divs" id="project-left-div" >
         <div class="card text-center">
           <%= image_tag(project.photo, class: "card-img-top", alt: "photo here") %>
         </div>
       </div>
-      <div class="col-md-8">
-        <div class="card text-center">
+      <div class="col-md-8 py-5 project-col-divs" id="project-right-div">
+        <div class="card text-center" id="project-description-card">
           <div class="card text-center">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h3 class="card-title" id="project-title"><%= project.name %></h3>
+              <h5 class="card-text"><%= project.description %></h5>
+              <p class="card-text d-none d-md-block"><%= project.detailed_description %></p>
+              <div class="d-flex justify-content-between">
+                <%=link_to("Live Demo", project.live_demo, class: "project-links", target: "_blank") %>
+                <%=link_to("Github", project.github_link, class: "project-links", target: "_blank") %>
+              </div>
+              <div class="d-md-flex justify-content-between mt-2 d-none" id="technology-div">
+                <% project.technologies.each do |tech| %>
+                  <span class="technology-span"><%= tech.technology %></span>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
       </div>
     <% end %>
+  </div>
+
+  <div class="container">
+    <h3 clas="text-center" style="font-weight: bolder; color: black">Contact Me</h3>
+    <div class="row">
+      <div class="col-md-4 text-center"><i class="fab fa-twitter twitter"></i></div>
+      <div class="col-md-4 text-center"><i class="fab fa-linkedin-in linkedin"></i></div>
+      <div class="col-md-4 text-center"><i class="fab fa-facebook-square facebook"></i></div>
+      <div class="col-md-6 text-center"><i class="fas fa-phone-volume phone">+237671172775</i></div>
+      <div class="col-md-6 text-center"><i class="fas fa-envelope-open-text email">nyagaandreroy@gmail.com</i></div>
+
+    </div>
+    
   </div>
 </div>
