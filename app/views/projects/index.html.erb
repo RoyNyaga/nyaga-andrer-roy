@@ -1,4 +1,55 @@
 <%= render "layouts/header" %>
+<div class="container">
+  <h1 class="text-center my-5" id="about" style="font-weight: bolder; color: black">About Me</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-center" id="about-card">
+        <div class="card-body">
+          <i class="fas fa-laptop-code about-icons"></i>
+          <h4 class="card-title">Skills</h4>
+          <div class="d-flex justify-content-between flex-wrap">
+            <span class="skill-span">Ruby</span>
+            <span class="skill-span">Rails</span>
+            <span class="skill-span">React</span>
+            <span class="skill-span">Redux</span>
+            <span class="skill-span">Javascript</span>
+            <span class="skill-span">Postgresql</span>
+            <span class="skill-span">Bootstrap4</span>
+            <span class="skill-span">Git and Github</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center" id="about-card">
+        <div class="card-body">
+          <i class="fas fa-graduation-cap about-icons"></i>
+          <h4 class="card-title">Education</h4>
+          <div class="d-flex justify-content-between flex-wrap">
+            <span class="skill-span">Microverse Certificate In Web development.</span>
+            <span class="skill-span">Bachelors In Educational Biology, Universityy Of Buea.</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center" id="about-card">
+        <div class="card-body">
+          <i class="fas fa-camera-retro about-icons"></i>
+          <h4 class="card-title">Interest</h4>
+          <div class="d-flex justify-content-between flex-wrap">
+            <span class="skill-span">Piano</span>
+            <span class="skill-span">Football</span>
+            <span class="skill-span">internet</span>
+            <span class="skill-span">Animation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid mt-5" id="overall-div">
   <h1 class="text-center mb-5" id="projects" style="font-weight: bolder; color: black">Projects</h1>
   <div class="row w-75 mx-auto">
@@ -32,15 +83,19 @@
   </div>
 
   <div class="container">
-    <h3 clas="text-center" style="font-weight: bolder; color: black">Contact Me</h3>
+    <h3 id="contact" class="text-center mt-5 mb-5" style="font-weight: bolder; color: black">Contact Me</h3>
     <div class="row">
-      <div class="col-md-4 text-center"><i class="fab fa-twitter twitter"></i></div>
-      <div class="col-md-4 text-center"><i class="fab fa-linkedin-in linkedin"></i></div>
-      <div class="col-md-4 text-center"><i class="fab fa-facebook-square facebook"></i></div>
-      <div class="col-md-6 text-center"><i class="fas fa-phone-volume phone">+237671172775</i></div>
-      <div class="col-md-6 text-center"><i class="fas fa-envelope-open-text email">nyagaandreroy@gmail.com</i></div>
+      <div class="col-md-4 text-center"><a href="https://twitter.com/nyagaandreroy1" target="_blank"><i class="fab fa-twitter twitter"></i></a></div>
+      <div class="col-md-4 text-center"><a href="https://www.linkedin.com/in/roy-nyaga-andre/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a></div>
+      <div class="col-md-4 text-center"><a href="https://web.facebook.com/roy.nyaga.77" target="_blank"><i class="fab fa-facebook-square facebook"></i></a></div>
+      <div class="col-md-4 text-center"><i class="fas fa-phone-volume phone">+237671172775</i></div>
+      <div class="col-md-4 text-center"><a href="https://github.com/RoyNyaga" target="_blank"><i class="fab fa-github github"></i></a></div>
+      <div class="col-md-4 text-center"><i class="fas fa-envelope-open-text email">nyagaandreroy@gmail.com</i></div>
 
     </div>
-    
+  </div>
+
+  <div class="container-fluid" id="footer">
+    <h4 class="text-center">Made by Roy Nyaga © 2020</h4>
   </div>
 </div>

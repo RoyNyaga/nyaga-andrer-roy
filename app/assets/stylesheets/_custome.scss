@@ -133,7 +133,7 @@
 	color: #e43f5c;
 	background: black;
 	padding: 10px;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
 .email{
@@ -141,4 +141,36 @@
 	background: black;
 	padding: 10px;
 	font-size: 1.2em;
+}
+
+.github{
+	padding: 10px;
+	font-size: 5em;
+	color: black;
+}
+
+#footer{
+	padding: 30px;
+	border-top: 2px solid black;
+}
+
+#about-card {
+	border: 2px solid #e43f5c;
+}
+
+.skill-span{
+	padding: 5px;
+	border: 2px solid #e43f5c;
+	border-radius: 50px;
+	background: white;
+	color: #e43f5c;
+}
+
+.about-icons{
+	padding: 15px;
+	font-size: 3em;
+	background: #262626;
+	color: #e43f5c;
+	border: 2px solid white;
+	border-radius: 50px;
 }
