@@ -1,3 +1,9 @@
+body{
+	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+}
+
 /*####### navbar #######*/
 
 #navbar-wrapper {
@@ -6,55 +12,50 @@
 }
 
 .nav-link{
-	color: #ca425a;
+	padding: 5px;
+	color: white;
 	font-size: 1.5em;
 }
 
+.nav-link:hover{
+	border-bottom: 2px solid white;
+	color: white;
+}
+
+.navbar-brand{
+	font-size: 1.5em;
+	color: white;
+}
+
+.navbar-brand:hover{
+	text-decoration: none;
+	color: white;
+}
 
 /*###### Header ##########*/
 
-.carousel-item{
+#header-wrapper{
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1584899473/black-flat-screen-computer-monitor-1714208_cfpj79.jpg)center/cover no-repeat fixed;
 	height: 100vh;
-	min-height: 300px;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background: red;
+	color: white;
 }
 
-.carousel-caption{
-	bottom: 350px;
-}
-.carousel-caption h5{
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
+.header-inner-div{
+	border-top: 3px solid #561a25;
 }
 
-.carousel-caption p{
-	width: 60%;
-	margin: auto;
-	font-size: 18px;
-	line-height: 1.9;
+#header-about-me-link{
+	padding: 10px;
+	border: 3px solid #561a25;
+	color: white;
+	background: transparent;
+	margin-top: 5px;
+	font-size: 1.5em;
 }
 
-.carousel-caption a{
-	text-transform: uppercase;
-	background: #262626;
-	padding: 10px 30px;
-	display: inline-block;
-	color: #e43f5c;
-	margin-top: 15px;
-	border: 2px solid #e43f5c;
-}
-
-.carousel-caption a:hover{
-	background: #c7baba;
-	text-decoration: none
-}
-
-.w-100{
-	height: 100vh;
+#header-about-me-link:hover{
+	border: 2px solid white;
+	text-decoration: none;
 }
 
 
