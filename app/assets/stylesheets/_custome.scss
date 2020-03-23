@@ -75,6 +75,16 @@ body{
 	border: 2px solid #e43f5c;
 }
 
+.about-skill-list{
+	list-style: none;
+}
+
+.about-skill-list-item{
+	display: inline;
+	padding: 10px;
+
+}
+
 .project-links {
 	background: #262626;
 	padding: 5px;
@@ -106,40 +116,32 @@ body{
 }
 
 .twitter {
-	color: white;
-	background: #3a8de6;
+	color: #3a8de6;
 	padding: 10px;
 	font-size: 5em;
-	border: 2px solid white;
-	border-radius: 50px;
 }
 
 .linkedin{
 	padding: 10px;
-	border: 2px solid white;
 	font-size: 5em;
-	border-radius: 50px;
-	background: #ffc107;
+	color: #3a8de6;
 }
 
 .facebook{
-	color: white;
-	background: #3a8de6;
+	color: #3a8de6;
 	padding: 10px;
 	font-size: 5em;
 
 }
 
 .phone{
-	color: #e43f5c;
-	background: black;
+	color: black;
 	padding: 10px;
 	font-size: 1.2em;
 }
 
 .email{
-	color: #e43f5c;
-	background: black;
+	color: black;
 	padding: 10px;
 	font-size: 1.2em;
 }
@@ -155,16 +157,9 @@ body{
 	border-top: 2px solid black;
 }
 
-#about-card {
-	border: 2px solid #e43f5c;
-}
 
-.skill-span{
-	padding: 5px;
-	border: 2px solid #e43f5c;
-	border-radius: 50px;
-	background: white;
-	color: #e43f5c;
+.card{
+	border: none;
 }
 
 .about-icons{
