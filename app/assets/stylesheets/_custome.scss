@@ -111,41 +111,9 @@ body{
 	color: black
 }
 
-.twitter {
-	color: #3a8de6;
-	padding: 10px;
-	font-size: 5em;
-}
-
-.linkedin{
-	padding: 10px;
-	font-size: 5em;
-	color: #3a8de6;
-}
-
-.facebook{
-	color: #3a8de6;
-	padding: 10px;
-	font-size: 5em;
-
-}
-
-.phone{
-	color: black;
-	padding: 10px;
-	font-size: 1.2em;
-}
-
-.email{
-	color: black;
-	padding: 10px;
-	font-size: 1.2em;
-}
-
-.github{
-	padding: 10px;
-	font-size: 5em;
-	color: black;
+.fab{
+	font-size: 3em;
+	color: #e43f5c;
 }
 
 #footer{
@@ -165,4 +133,9 @@ body{
 	color: #e43f5c;
 	border: 2px solid white;
 	border-radius: 50px;
+}
+
+#contact-section {
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1584899473/black-flat-screen-computer-monitor-1714208_cfpj79.jpg)center/cover no-repeat fixed;
+	color: white;
 }
