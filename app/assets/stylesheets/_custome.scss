@@ -1,7 +1,8 @@
 body{
 	margin: 0px;
 	font-family: 'Roboto Slab', serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
+	background: #eae8e8;
 }
 
 /*####### navbar #######*/
@@ -63,8 +64,11 @@ body{
 /*######### Home page #########*/
 
 .row-div{
-	border-bottom: 2px solid #a03749;
+	border: 2px solid #a03749;
 	color: #561a25;
+	border-radius: 20px;
+	background: white;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.5)
 }
 
 .about-skill-list{
@@ -79,9 +83,10 @@ body{
 
 .project-links {
 	background: #262626;
-	padding: 5px;
+	padding: 4px;
 	color: #e43f5c;
 	border: 2px solid #e43f5c;
+	font-size: 0.9em;
 }
 
 .project-links:hover{

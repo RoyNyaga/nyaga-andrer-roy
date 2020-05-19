@@ -1,10 +1,10 @@
 <%= render "layouts/header" %>
 <div class="container">
-  <h1 class="text-center my-5 wow animate__fadeInLeft" data-wow-duration="1s" id="about" style="font-weight: bolder; color: black">About Me</h1>
+  <h1 class="text-center my-5 wow animate__fadeInLeft text-muted" data-wow-duration="1s" id="about" style="font-weight: bolder; color: black">About Me</h1>
   <div class="row">
     <div class="col-md-4">
-      <div class="card text-center">
-        <div class="card-body">
+      <div class="text-center">
+        <div class="">
           <i class="fas fa-laptop-code about-icons wow animate__fadeInDownBig" data-wow-duration="2s"></i>
           <h4 class="card-title pt-3 wow animate__fadeInRight" data-wow-duration="3s">Skills</h4>
           <div class="d-flex justify-content-between flex-wrap wow animate__fadeInLeft" data-wow-duration="2s">
@@ -27,8 +27,8 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card text-center">
-        <div class="card-body">
+      <div class="text-center">
+        <div class="">
           <i class="fas fa-graduation-cap about-icons wow animate__fadeInDownBig" data-wow-duration="2s"></i>
           <h4 class="card-title pt-3 wow animate__zoomIn" data-wow-duration="2s">Education</h4>
           <div class="d-flex justify-content-between flex-wrap wow animate__zoomIn" data-wow-duration="2s">
@@ -40,8 +40,8 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card text-center">
-        <div class="card-body">
+      <div class="text-center">
+        <div class="">
           <i class="fas fa-camera-retro about-icons wow animate__fadeInDownBig" data-wow-duration="2s"></i>
           <h4 class="card-title pt-3 wow animate__fadeInRight" data-wow-duration="2s">Interest</h4>
           <div class="d-flex justify-content-between flex-wrap wow animate__fadeInRight" data-wow-duration="2s">
@@ -57,19 +57,20 @@
 </div>
 
 <div class="container mt-5" id="overall-div">
-  <h1 class="text-center mb-5 wow animate__zoomIn" data-wow-duration="2s" id="projects" style="font-weight: bolder; color: black">Projects</h1>
+  <h1 class="text-center mb-5 wow animate__zoomIn text-muted" data-wow-duration="2s" id="projects" style="font-weight: bolder; color: black">Projects</h1>
   <% @projects.each do |project| %>
-    <div class="row mx-auto row-div">      
+    <div class="row mx-auto row-div mb-5 p-3 wow animate__hinge" data-wow-duration="2s">      
         <div class="col-md-6 project-col-divs" id="project-left-div">
           <div class="card text-center">
             <%= image_tag(project.photo, class: "card-img-top", alt: "photo here") %>
           </div>
         </div>
         <div class="col-md-6 project-col-divs" id="project-right-div">
-          <div class="card text-center">
-            <div class="card text-center">
-              <div class="card-body">
-                <h3 class="card-title" id="project-title"><%= project.name %></h3>
+          <div class="card text-center h-100">
+            <div class="card card-text my-auto">
+              <div class="card-body" style="font-size: 0.8em;">
+                <h3 class="card-title d-none d-md-block text-muted" id="project-title"><%= project.name %></h3>
+                <h5 class="card-title d-md-none text-muted" id="project-title"><%= project.name %></h5>
                 <p class="card-text d-none d-md-block"><%= project.detailed_description %></p>
                 <div class="d-flex justify-content-between">
                   <%=link_to("View", project.live_demo, class: "project-links", target: "_blank") %>
