@@ -73,7 +73,7 @@
                 <h5 class="card-title d-md-none text-muted" id="project-title"><%= project.name %></h5>
                 <p class="card-text d-none d-md-block"><%= project.detailed_description %></p>
                 <div class="d-flex justify-content-between">
-                  <%=link_to("View", project.live_demo, class: "project-links", target: "_blank") %>
+                  <%=link_to("View", project.live_demo, class: "project-links", target: "_blank", data_wow_duration: "1s") %>
                   <%=link_to("Github", project.github_link, class: "project-links", target: "_blank") %>
                 </div>
                 <div class="d-md-flex justify-content-between mt-2 d-none flex-wrap" id="technology-div">
