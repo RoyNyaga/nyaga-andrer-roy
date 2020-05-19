@@ -62,17 +62,9 @@ body{
 
 /*######### Home page #########*/
 
-#project-right-div {
+.row-div{
 	border-bottom: 2px solid #a03749;
 	color: #561a25;
-}
-
-#project-left-div {
-	border-bottom: 2px solid #a03749;
-}
-
-#project-description-card{
-	border: 2px solid #e43f5c;
 }
 
 .about-skill-list{
@@ -99,15 +91,13 @@ body{
 }
 
 .technology-span{
-	padding: 5px;
-	border: 2px solid #e43f5c;
-	border-radius: 30px;
+	padding: 2px;
 	color: #e43f5c; 
 }
 
 #technology-div{
-	border-top: 2px solid #e43f5c;
-	padding-top: 10px;
+	border-top: 2px solid #a03749;
+	padding-top: 3px;
 }
 
 #project-title{
